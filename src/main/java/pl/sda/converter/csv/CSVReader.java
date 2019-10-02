@@ -18,9 +18,9 @@ public class CSVReader implements SDAFileReader {
             String firstLine = bufferedReader.readLine();
             String[] headers = firstLine.split(";");
 
-            String line;
-            while ((line = bufferedReader.readLine()) != null) {
-                String[] tokens = line.split(";");
+            String line1;
+            while ((line1 = bufferedReader.readLine()) != null) {
+                String[] tokens = line1.split(";");
 
                 Map<String, Object> record = new LinkedHashMap<>();
                 for (int i = 0; i < headers.length; i++ ){
